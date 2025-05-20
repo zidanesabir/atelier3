@@ -51,11 +51,32 @@ CREATE TABLE panier_article (
     FOREIGN KEY (article_id) REFERENCES article(id)
 );
 
--- Insérer des données de test
+-- Insertion des articles
 INSERT INTO article (nom, prix) VALUES 
 ('Ordinateur portable', 899.99),
 ('Smartphone', 499.99),
 ('Casque audio', 149.99);
 
-INSERT INTO panier (total) VALUES (1549.97);
+-- Insertion de paniers
+INSERT INTO panier (total) VALUES 
+(1549.97),
+(649.98),
+(899.99);
 
+-- Association des articles aux paniers
+-- Panier 1 (1549.97) - Ordinateur portable + Casque audio
+INSERT INTO panier_article (panier_id, article_id) VALUES 
+(1, 1),
+(1, 3);
+
+-- Panier 2 (649.98) - Smartphone + Casque audio
+INSERT INTO panier_article (panier_id, article_id) VALUES 
+(2, 2),
+(2, 3);
+
+-- Panier 3 (899.99) - Ordinateur portable
+INSERT INTO panier_article (panier_id, article_id) VALUES 
+(3, 1);
+
+-- Vérification
+SELECT * FROM panier;
