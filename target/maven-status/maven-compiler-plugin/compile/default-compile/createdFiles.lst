@@ -1,0 +1,6 @@
+com\example\dao\PanierDAO.class
+com\example\servlet\BonLivraisonServlet.class
+com\example\servlet\ListePaniersServlet.class
+com\example\model\Panier.class
+com\example\dao\BonLivraisonDAO.class
+com\example\model\BonLivraison.class

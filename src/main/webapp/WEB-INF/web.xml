@@ -9,3 +9,38 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
+  <display-name>atelier3</display-name>
+
+  <!-- Servlet pour les bons de livraison -->
+  <servlet>
+    <servlet-name>bonLivraison</servlet-name>
+    <servlet-class>com.example.servlet.ListeBonLivraisonServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>bonLivraison</servlet-name>
+    <url-pattern>/bonlivraisons</url-pattern>
+  </servlet-mapping>
+
+  <!-- (Autre servlet : ListePaniersServlet) -->
+  <servlet>
+    <servlet-name>ListePaniersServlet</servlet-name>
+    <servlet-class>com.example.servlet.ListePaniersServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ListePaniersServlet</servlet-name>
+    <url-pattern>/ListePaniersServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Page d'accueil -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>liste_bons.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>q
+
