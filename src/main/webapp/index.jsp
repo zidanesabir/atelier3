@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Gestion des Paniers</title>
+<title>Gestion des commandes</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@ body {
 </style>
 </head>
 <body>
-    <h1>Système de Gestion des Paniers</h1>
+    <h1>Système de Gestion des commandes</h1>
     <p>Bienvenue dans l'application de gestion des paniers</p>
     
     <a href="paniers" class="button">Voir tous les paniers</a>
